@@ -7,47 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C80B921A6F3F58F76C31292 /* libPods-SmartCarBooking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-SmartCarBooking.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		15A67121682A4BBA919CF67D /* KohinoorLatin-Bold-BF63c76513f09da.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FA81E938B55439DBD07771E /* KohinoorLatin-Bold-BF63c76513f09da.otf */; };
+		28BEF399F9384060B40F20AC /* KohinoorLatin-BlackItalic-BF63c76510c5583.otf in Resources */ = {isa = PBXBuildFile; fileRef = 003CA60E6E5149B8B4FAE1DE /* KohinoorLatin-BlackItalic-BF63c76510c5583.otf */; };
+		30BE2A7F6E3E41E2A659279E /* KohinoorLatin-Book-BF63c76513e60f1.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2F69098C3B94E4296786459 /* KohinoorLatin-Book-BF63c76513e60f1.otf */; };
+		35628E07976A4D48B6273051 /* KohinoorLatin-Demi-BF63c765144638d.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39F4542F846A4576B072DDE2 /* KohinoorLatin-Demi-BF63c765144638d.otf */; };
+		56DA73E67B0D40D98B215B0B /* KohinoorLatin-LightItalic-BF63c7651347850.otf in Resources */ = {isa = PBXBuildFile; fileRef = D4900239CA754BFB89388E72 /* KohinoorLatin-LightItalic-BF63c7651347850.otf */; };
+		6EB14252100048C687601D3B /* KohinoorLatin-Light-BF63c76513209af.otf in Resources */ = {isa = PBXBuildFile; fileRef = E6938FD340F644B18D9453DC /* KohinoorLatin-Light-BF63c76513209af.otf */; };
+		708F70BDA6062A0D8405BEBE /* libPods-SmartCarBooking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7976D3DCC837B3490DB0ED90 /* libPods-SmartCarBooking.a */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		7AF6626837504CC198B27F9A /* KohinoorLatin-BookItalic-BF63c76513bc679.otf in Resources */ = {isa = PBXBuildFile; fileRef = F165B5A2171A4BF1BF52B50A /* KohinoorLatin-BookItalic-BF63c76513bc679.otf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		89EE17263CC5486993A93324 /* KohinoorLatin-Black-BF63c76510c679a.otf in Resources */ = {isa = PBXBuildFile; fileRef = 57E04BABC5B243159748D088 /* KohinoorLatin-Black-BF63c76510c679a.otf */; };
-		28BEF399F9384060B40F20AC /* KohinoorLatin-BlackItalic-BF63c76510c5583.otf in Resources */ = {isa = PBXBuildFile; fileRef = 003CA60E6E5149B8B4FAE1DE /* KohinoorLatin-BlackItalic-BF63c76510c5583.otf */; };
-		15A67121682A4BBA919CF67D /* KohinoorLatin-Bold-BF63c76513f09da.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FA81E938B55439DBD07771E /* KohinoorLatin-Bold-BF63c76513f09da.otf */; };
-		92B492361A074E339B107540 /* KohinoorLatin-BoldItalic-BF63c7651386cfd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A6BBDD08483402DBE8AF7DA /* KohinoorLatin-BoldItalic-BF63c7651386cfd.otf */; };
-		30BE2A7F6E3E41E2A659279E /* KohinoorLatin-Book-BF63c76513e60f1.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2F69098C3B94E4296786459 /* KohinoorLatin-Book-BF63c76513e60f1.otf */; };
-		7AF6626837504CC198B27F9A /* KohinoorLatin-BookItalic-BF63c76513bc679.otf in Resources */ = {isa = PBXBuildFile; fileRef = F165B5A2171A4BF1BF52B50A /* KohinoorLatin-BookItalic-BF63c76513bc679.otf */; };
-		35628E07976A4D48B6273051 /* KohinoorLatin-Demi-BF63c765144638d.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39F4542F846A4576B072DDE2 /* KohinoorLatin-Demi-BF63c765144638d.otf */; };
-		95E7447BAECF4EDC82534A76 /* KohinoorLatin-DemiItalic-BF63c7651389346.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E8DF2ADF02647978ED9F79F /* KohinoorLatin-DemiItalic-BF63c7651389346.otf */; };
-		6EB14252100048C687601D3B /* KohinoorLatin-Light-BF63c76513209af.otf in Resources */ = {isa = PBXBuildFile; fileRef = E6938FD340F644B18D9453DC /* KohinoorLatin-Light-BF63c76513209af.otf */; };
-		56DA73E67B0D40D98B215B0B /* KohinoorLatin-LightItalic-BF63c7651347850.otf in Resources */ = {isa = PBXBuildFile; fileRef = D4900239CA754BFB89388E72 /* KohinoorLatin-LightItalic-BF63c7651347850.otf */; };
-		AF38EEA97D094EB48671103B /* KohinoorLatin-Medium-BF63c76513dba4c.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ED581F6458446A089E684F4 /* KohinoorLatin-Medium-BF63c76513dba4c.otf */; };
 		91C84CBA6207418B9AE4B9F2 /* KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD213BED0F6A46E5A76B0709 /* KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf */; };
+		92B492361A074E339B107540 /* KohinoorLatin-BoldItalic-BF63c7651386cfd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A6BBDD08483402DBE8AF7DA /* KohinoorLatin-BoldItalic-BF63c7651386cfd.otf */; };
+		95E7447BAECF4EDC82534A76 /* KohinoorLatin-DemiItalic-BF63c7651389346.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E8DF2ADF02647978ED9F79F /* KohinoorLatin-DemiItalic-BF63c7651389346.otf */; };
+		AF38EEA97D094EB48671103B /* KohinoorLatin-Medium-BF63c76513dba4c.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ED581F6458446A089E684F4 /* KohinoorLatin-Medium-BF63c76513dba4c.otf */; };
+		B0192806838AFB6278B13BF8 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		003CA60E6E5149B8B4FAE1DE /* KohinoorLatin-BlackItalic-BF63c76510c5583.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KohinoorLatin-BlackItalic-BF63c76510c5583.otf"; path = "../assets/fonts/KohinoorLatin-BlackItalic-BF63c76510c5583.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* SmartCarBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCarBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SmartCarBooking/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SmartCarBooking/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = SmartCarBooking/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-SmartCarBooking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCarBooking.debug.xcconfig"; path = "Target Support Files/Pods-SmartCarBooking/Pods-SmartCarBooking.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-SmartCarBooking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCarBooking.release.xcconfig"; path = "Target Support Files/Pods-SmartCarBooking/Pods-SmartCarBooking.release.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-SmartCarBooking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartCarBooking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E8DF2ADF02647978ED9F79F /* KohinoorLatin-DemiItalic-BF63c7651389346.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KohinoorLatin-DemiItalic-BF63c7651389346.otf"; path = "../assets/fonts/KohinoorLatin-DemiItalic-BF63c7651389346.otf"; sourceTree = "<group>"; };
+		1FA81E938B55439DBD07771E /* KohinoorLatin-Bold-BF63c76513f09da.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KohinoorLatin-Bold-BF63c76513f09da.otf"; path = "../assets/fonts/KohinoorLatin-Bold-BF63c76513f09da.otf"; sourceTree = "<group>"; };
+		39F4542F846A4576B072DDE2 /* KohinoorLatin-Demi-BF63c765144638d.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KohinoorLatin-Demi-BF63c765144638d.otf"; path = "../assets/fonts/KohinoorLatin-Demi-BF63c765144638d.otf"; sourceTree = "<group>"; };
+		57E04BABC5B243159748D088 /* KohinoorLatin-Black-BF63c76510c679a.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KohinoorLatin-Black-BF63c76510c679a.otf"; path = "../assets/fonts/KohinoorLatin-Black-BF63c76510c679a.otf"; sourceTree = "<group>"; };
+		5CFD3A6F0B4140337C925244 /* Pods-SmartCarBooking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCarBooking.debug.xcconfig"; path = "Target Support Files/Pods-SmartCarBooking/Pods-SmartCarBooking.debug.xcconfig"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SmartCarBooking/AppDelegate.swift; sourceTree = "<group>"; };
+		7976D3DCC837B3490DB0ED90 /* libPods-SmartCarBooking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartCarBooking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SmartCarBooking/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8ED581F6458446A089E684F4 /* KohinoorLatin-Medium-BF63c76513dba4c.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KohinoorLatin-Medium-BF63c76513dba4c.otf"; path = "../assets/fonts/KohinoorLatin-Medium-BF63c76513dba4c.otf"; sourceTree = "<group>"; };
+		9A6BBDD08483402DBE8AF7DA /* KohinoorLatin-BoldItalic-BF63c7651386cfd.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KohinoorLatin-BoldItalic-BF63c7651386cfd.otf"; path = "../assets/fonts/KohinoorLatin-BoldItalic-BF63c7651386cfd.otf"; sourceTree = "<group>"; };
+		BD213BED0F6A46E5A76B0709 /* KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf"; path = "../assets/fonts/KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf"; sourceTree = "<group>"; };
+		D4900239CA754BFB89388E72 /* KohinoorLatin-LightItalic-BF63c7651347850.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KohinoorLatin-LightItalic-BF63c7651347850.otf"; path = "../assets/fonts/KohinoorLatin-LightItalic-BF63c7651347850.otf"; sourceTree = "<group>"; };
+		E6938FD340F644B18D9453DC /* KohinoorLatin-Light-BF63c76513209af.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KohinoorLatin-Light-BF63c76513209af.otf"; path = "../assets/fonts/KohinoorLatin-Light-BF63c76513209af.otf"; sourceTree = "<group>"; };
+		EB94AE4BA086E58ECA44E7FD /* Pods-SmartCarBooking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCarBooking.release.xcconfig"; path = "Target Support Files/Pods-SmartCarBooking/Pods-SmartCarBooking.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		57E04BABC5B243159748D088 /* KohinoorLatin-Black-BF63c76510c679a.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-Black-BF63c76510c679a.otf"; path = "../assets/fonts/KohinoorLatin-Black-BF63c76510c679a.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		003CA60E6E5149B8B4FAE1DE /* KohinoorLatin-BlackItalic-BF63c76510c5583.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-BlackItalic-BF63c76510c5583.otf"; path = "../assets/fonts/KohinoorLatin-BlackItalic-BF63c76510c5583.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1FA81E938B55439DBD07771E /* KohinoorLatin-Bold-BF63c76513f09da.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-Bold-BF63c76513f09da.otf"; path = "../assets/fonts/KohinoorLatin-Bold-BF63c76513f09da.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9A6BBDD08483402DBE8AF7DA /* KohinoorLatin-BoldItalic-BF63c7651386cfd.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-BoldItalic-BF63c7651386cfd.otf"; path = "../assets/fonts/KohinoorLatin-BoldItalic-BF63c7651386cfd.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F2F69098C3B94E4296786459 /* KohinoorLatin-Book-BF63c76513e60f1.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-Book-BF63c76513e60f1.otf"; path = "../assets/fonts/KohinoorLatin-Book-BF63c76513e60f1.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F165B5A2171A4BF1BF52B50A /* KohinoorLatin-BookItalic-BF63c76513bc679.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-BookItalic-BF63c76513bc679.otf"; path = "../assets/fonts/KohinoorLatin-BookItalic-BF63c76513bc679.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		39F4542F846A4576B072DDE2 /* KohinoorLatin-Demi-BF63c765144638d.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-Demi-BF63c765144638d.otf"; path = "../assets/fonts/KohinoorLatin-Demi-BF63c765144638d.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1E8DF2ADF02647978ED9F79F /* KohinoorLatin-DemiItalic-BF63c7651389346.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-DemiItalic-BF63c7651389346.otf"; path = "../assets/fonts/KohinoorLatin-DemiItalic-BF63c7651389346.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E6938FD340F644B18D9453DC /* KohinoorLatin-Light-BF63c76513209af.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-Light-BF63c76513209af.otf"; path = "../assets/fonts/KohinoorLatin-Light-BF63c76513209af.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D4900239CA754BFB89388E72 /* KohinoorLatin-LightItalic-BF63c7651347850.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-LightItalic-BF63c7651347850.otf"; path = "../assets/fonts/KohinoorLatin-LightItalic-BF63c7651347850.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8ED581F6458446A089E684F4 /* KohinoorLatin-Medium-BF63c76513dba4c.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-Medium-BF63c76513dba4c.otf"; path = "../assets/fonts/KohinoorLatin-Medium-BF63c76513dba4c.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BD213BED0F6A46E5A76B0709 /* KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf"; path = "../assets/fonts/KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F165B5A2171A4BF1BF52B50A /* KohinoorLatin-BookItalic-BF63c76513bc679.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KohinoorLatin-BookItalic-BF63c76513bc679.otf"; path = "../assets/fonts/KohinoorLatin-BookItalic-BF63c76513bc679.otf"; sourceTree = "<group>"; };
+		F2F69098C3B94E4296786459 /* KohinoorLatin-Book-BF63c76513e60f1.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "KohinoorLatin-Book-BF63c76513e60f1.otf"; path = "../assets/fonts/KohinoorLatin-Book-BF63c76513e60f1.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-SmartCarBooking.a in Frameworks */,
+				708F70BDA6062A0D8405BEBE /* libPods-SmartCarBooking.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-SmartCarBooking.a */,
+				7976D3DCC837B3490DB0ED90 /* libPods-SmartCarBooking.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,14 +117,14 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-SmartCarBooking.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-SmartCarBooking.release.xcconfig */,
+				5CFD3A6F0B4140337C925244 /* Pods-SmartCarBooking.debug.xcconfig */,
+				EB94AE4BA086E58ECA44E7FD /* Pods-SmartCarBooking.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		CDB61EFA71004B699E2B0173 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				57E04BABC5B243159748D088 /* KohinoorLatin-Black-BF63c76510c679a.otf */,
 				003CA60E6E5149B8B4FAE1DE /* KohinoorLatin-BlackItalic-BF63c76510c5583.otf */,
@@ -139,8 +140,8 @@
 				BD213BED0F6A46E5A76B0709 /* KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
 			path = "";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -149,13 +150,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SmartCarBooking" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				7C61B5AD1DB19C3665694783 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				20B1941FB2C834C343D779D3 /* [CP] Embed Pods Frameworks */,
+				09C03DBA4FC8BCE064C6E693 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +217,7 @@
 				56DA73E67B0D40D98B215B0B /* KohinoorLatin-LightItalic-BF63c7651347850.otf in Resources */,
 				AF38EEA97D094EB48671103B /* KohinoorLatin-Medium-BF63c76513dba4c.otf in Resources */,
 				91C84CBA6207418B9AE4B9F2 /* KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf in Resources */,
+				B0192806838AFB6278B13BF8 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +240,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		09C03DBA4FC8BCE064C6E693 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartCarBooking/Pods-SmartCarBooking-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartCarBooking/Pods-SmartCarBooking-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartCarBooking/Pods-SmartCarBooking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20B1941FB2C834C343D779D3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,7 +274,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartCarBooking/Pods-SmartCarBooking-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		7C61B5AD1DB19C3665694783 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,23 +296,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SmartCarBooking/Pods-SmartCarBooking-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SmartCarBooking/Pods-SmartCarBooking-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartCarBooking/Pods-SmartCarBooking-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -310,7 +312,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-SmartCarBooking.debug.xcconfig */;
+			baseConfigurationReference = 5CFD3A6F0B4140337C925244 /* Pods-SmartCarBooking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -338,7 +340,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-SmartCarBooking.release.xcconfig */;
+			baseConfigurationReference = EB94AE4BA086E58ECA44E7FD /* Pods-SmartCarBooking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -431,7 +433,10 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -496,7 +501,9 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
