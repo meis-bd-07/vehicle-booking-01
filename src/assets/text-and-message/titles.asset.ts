@@ -7,6 +7,7 @@ enum titles {
   driverRatingReview = "ড্রাইভার\u00A0রেটিং\u00A0&\u00A0রিভিউ",
   totalTrips = "টোটাল\u00A0ট্রিপঃ",
   driverReview = "ড্রাইভার\u00A0রিভিউ",
-  viewMore = "আরও\u00A0দেখুন"
+  viewMore = "আরও\u00A0দেখুন",
+  bidding = 'BIDDING'
 }
 export { titles };

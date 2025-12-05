@@ -26,8 +26,6 @@ const ImagePreview = ({
   resizeMode = 'cover',
   borderRadius = 0,
   containerStyle = {},
-  containerClassName = '',
-  imageClassName = '',
   isSvg = false,
   svgProps = {},
   skeletonStyles = {}
@@ -38,7 +36,7 @@ const ImagePreview = ({
     if (!isEmpty(image) && !isEmpty(image?.uri)) image.uri = JSON.parse(image.uri ?? '');
   } catch {}
   return (
-    <View style={[style.relative, containerStyle]} className={containerClassName}>
+    <View style={[style.relative, containerStyle]}>
       {isSvg && (
         <SvgUri
           uri="https://trucklagbe.com/assets/icon/common-item/logo-truck-lagbe/truck-lagbe-dark.svg"
@@ -53,7 +51,6 @@ const ImagePreview = ({
         resizeMode={resizeMode as any}
         onLoadEnd={() => setIsLoading(false)}
         onLoadStart={() => setIsLoading(true)}
-        className={imageClassName}
       />)}
       {isLoading && (
         <View style={[style.loaderView, skeletonStyles]}>

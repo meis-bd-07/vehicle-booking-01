@@ -7,8 +7,8 @@ import {colors} from './colors.style.asset';
 
 export const typographies = StyleSheet.create({
   headerSemiBold: {
-    fontFamily: fonts.kLatinBold, //semi bold
-    fontWeight: '600', /* TODO: check with Kohinoor Bangla variant if available */
+    fontFamily: fonts.kLatinBold,
+    fontWeight: '600',
     fontSize: rs(14),
     lineHeight: rs(24),
     letterSpacing: 0,
@@ -16,8 +16,8 @@ export const typographies = StyleSheet.create({
     textAlign: 'left',
   },
   headerW700: {
-    fontFamily: fonts.kLatinBold, //semi bold
-    fontWeight: '700', /* TODO: check with Kohinoor Bangla variant if available */
+    fontFamily: fonts.kLatinBold,
+    fontWeight: '700',
     fontSize: rs(22),
     lineHeight: rs(33),
     letterSpacing: 0,
@@ -43,7 +43,7 @@ export const typographies = StyleSheet.create({
     textAlign: 'left',
   },
   nameTextW400: {
-    fontFamily: fonts.kLatinBold,
+    fontFamily: fonts.kLatinBook,
     fontWeight: '400',
     fontSize: rs(14),
     lineHeight: rs(21),
@@ -61,7 +61,7 @@ export const typographies = StyleSheet.create({
     textAlign: 'left',
   },
   textS10W400: {
-    fontFamily: fonts.kLatinBold,
+    fontFamily: fonts.kLatinBook,
     fontWeight: '400',
     fontSize: rs(10),
     lineHeight: rs(15),
@@ -149,7 +149,14 @@ export const typographies = StyleSheet.create({
     letterSpacing: 0,
     color: colors.black,
     textAlign: 'left',
+  },
+  textS18L20W700: {
+    fontFamily: fonts.kLatinBook,
+    fontWeight: '700',
+    fontSize: rs(18),
+    lineHeight: rs(20),
+    letterSpacing: 0.26,
+    color: colors.pureBlack,
+    textAlign: 'left',
   }
-
 });
-

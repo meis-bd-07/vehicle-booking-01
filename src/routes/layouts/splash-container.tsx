@@ -4,7 +4,7 @@ import CustomStatusBar from '@components/status-bar/index.component';
 import React from 'react';
 import {View, ViewStyle} from 'react-native';
 
-const SplashContainer: React.FC<{children: any; containerStyle?: ViewStyle;}> = ({children, containerStyle}) => {
+const SplashContainer: React.FC<{children: React.ReactNode; containerStyle?: ViewStyle;}> = ({children, containerStyle}) => {
   return (
     <View style={[globalStyles.flex1, {backgroundColor: colors.splash.bg}]}>
       <CustomStatusBar showHeader={false} barStyle={'light-content'} bgColor={colors.transparent} />

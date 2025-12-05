@@ -25,7 +25,7 @@ const useCountdown = ({
   }
   const [countDown, setCountDown] = useState<number>(startValue);
   useEffect(() => {
-    let interval: any = 0;
+    let interval: number = 0;
     if (endValueData === '__infinite__') {
       interval = setInterval(() => {
         setCountDown(countDown + increment);

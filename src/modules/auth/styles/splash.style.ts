@@ -16,7 +16,7 @@ export const splashStyles = StyleSheet.create({
     marginTop: rs(-15),
   },
   text: {
-    ...typographies.bodyMedium,
+    ...typographies.textS14L21W400,
     color: colors.splash.text,
   },
   lottieContainer: {

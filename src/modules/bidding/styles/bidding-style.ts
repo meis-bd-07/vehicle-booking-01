@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         gap: 10
     },
     bottom: {
-        height: 45,
+        height: 60,
         shadowColor: '#000', // for iOS shadow color
         shadowOffset: {width: 0, height: 2},
         shadowOpacity: 0.25,        
@@ -42,7 +42,8 @@ const styles = StyleSheet.create({
         borderRadius: 1.5,
         backgroundColor: colors.gray7
     },
-    listHeader: {paddingBottom: 10, backgroundColor: colors.white}
+    listHeader: {paddingBottom: 10, backgroundColor: colors.white},
+    biddingTagWrp: {height: 20, borderRadius: 9.5, backgroundColor: colors.pureBlack, marginTop: 10}
 });
 
 export default styles;

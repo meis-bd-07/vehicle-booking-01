@@ -4,7 +4,7 @@ import { customPadding } from "@assets/styles/global.style.asset";
 import { typographies } from "@assets/styles/typographies.style.asset";
 import CustomStatusBar from "@components/status-bar/index.component";
 import { useNavigation } from "@react-navigation/native";
-import showAlertWithOneAction from "@utils/helpers/show-aleart-with-one-action";
+import showAlertWithOneAction from "@utils/helpers/show-alert-with-one-action";
 import { ReactElement } from "react";
 import { StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from "react-native";
 

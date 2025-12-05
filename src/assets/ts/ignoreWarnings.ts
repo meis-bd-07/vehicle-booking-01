@@ -22,7 +22,6 @@ if (__DEV__) {
     warn(...arg);
   };
 
-  // LogBox.ignoreLogs(ignoreWarns);
   LogBox.ignoreAllLogs();
 } else {
   LogBox.ignoreAllLogs();

@@ -1,5 +1,4 @@
 enum placeholders {
-  search = 'Search',
   noName = 'No name found !',
   noReview = 'কোনো\u00A0রিভিউ\u00A0নেই'
 }

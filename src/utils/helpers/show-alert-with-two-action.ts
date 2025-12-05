@@ -4,7 +4,7 @@ const showAlertWithTwoActions = (params: {
   title: string;
   body: string;
   okButtonText?: string;
-  onPressAction: (props: any) => void;
+  onPressAction: (props: unknown) => void;
   cancelButton?: string;
 }) => {
   const core = {

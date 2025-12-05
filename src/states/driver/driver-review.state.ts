@@ -2,7 +2,7 @@ import { DEFAULT_PAGE, DEFAULT_PER_PAGE } from "@assets/ts/core.data";
 import { IReview } from "@bidding_modules/types/bidding-list";
 import DriverReviewService from "@services/driver/Review";
 import { ISortingOrder, IStar, IUid } from "@type/global";
-import showAlertWithOneAction from "@utils/helpers/show-aleart-with-one-action";
+import showAlertWithOneAction from "@utils/helpers/show-alert-with-one-action";
 import { sleep } from "@utils/hooks/sleep.hook";
 import { create } from "zustand"
 

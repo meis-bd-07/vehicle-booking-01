@@ -13,17 +13,16 @@ const Splash = () => {
     const {} = useSplash();
     return (
         <SplashContainer>
-            {/* TODO: add splash bg here */}
             <View style={styles.splashContainer}>
                 <ImagePreview
                     source={{uri: config.splashLogo}}
                     svgProps={{width: rs(280), height: rs(200)}}
                     containerStyle={{backgroundColor: colors.transparent}}
-                    isSvg={true} /* TODO: add your url logic here */
+                    isSvg={true}
                 />
                 <View style={styles.textWrpAlt}>
                     <ActivityIndicator color={colors.white} size={'large'} />
-                    <Text style={[typographies.bodyMedium, {color: colors.white}]}>{messages.configurationApp}</Text>
+                    <Text style={[typographies.textS14L21W400, {color: colors.white}]}>{messages.configurationApp}</Text>
                 </View>
             </View>
         </SplashContainer>

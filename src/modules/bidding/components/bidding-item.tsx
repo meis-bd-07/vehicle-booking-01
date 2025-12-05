@@ -13,47 +13,11 @@ import Bidding from "@controllers/models/Bidding";
 import getHexaOpacityColorCode from "@utils/helpers/get-hexa-opacity-color-code";
 import { Text, TouchableOpacity, View } from "react-native";
 import BiddingItemCheckHandler from "./bidding-item-check-handler";
-import { bsManager } from "@components/bottom-sheet";
-import DetailsHeader from "./details/header";
-import { useDriverReviewState } from "@states/driver/driver-review.state";
-import DriverDetails from "./details/driver-details";
-import { SCREEN_HEIGHT } from "@assets/ts/core.data";
-import ViewMore from "./details/view-more";
-import { useCallback } from "react";
 
-const BiddingItem = ({item, index}: IBiddingItem) => {
-    const storeId = useDriverReviewState(s => s).storeId;
-    const toggleViewMore = useDriverReviewState(s => s).toggleViewMore;
-
-    const renderFooter = useCallback(
-        (scrollToFullHeight: () => void) => (<ViewMore scrollToFullHeight={scrollToFullHeight} />),
-        []
-    );
-
-    const goToDetails = () => {
-        storeId(item.driver.id);
-        bsManager.show({
-            flag: true,
-            bottomSheetProps: {
-                fixedHeader: <DetailsHeader item={item} />,
-                fullHeight: true,
-                refreshAction: true,
-                onGestureStart: () => {
-                    toggleViewMore(false);
-                },
-                footer: renderFooter
-            },
-            component: <DriverDetails item={item} />,
-            onClose: () => {
-                storeId(null);
-                toggleViewMore(true);
-            },
-            scrollTo: -(SCREEN_HEIGHT * 0.63)
-        })
-    }
+const BiddingItem = ({item, index, goToDetails}: IBiddingItem) => {
 
     return (
-        <TouchableOpacity key={index} style={styles.container} activeOpacity={0.7} onPress={goToDetails}>
+        <TouchableOpacity key={index} style={styles.container} activeOpacity={0.7} onPress={() => goToDetails(item)}>
             <ImagePreview 
                 source={{uri: item.driver.image || ''}}  
                 styles={styles.image}
@@ -78,7 +42,7 @@ const BiddingItem = ({item, index}: IBiddingItem) => {
                         </View>
                         <View style={styles.gpsInfo}>
                             <View style={[styles.starCircle, {backgroundColor: colors.locationOpacity}]}><LocationIcon /></View>
-                            <Text style={[typographies.textSubTitleW400, globalStyles.fontBold]}>{titles.gps}</Text>
+                            <Text style={[typographies.textSubTitleW400]}>{titles.gps}</Text>
                         </View>
                     </View>
                     {item.isFavorite && (<View style={styles.favoriteWrp}>

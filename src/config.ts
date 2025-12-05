@@ -5,6 +5,7 @@ export const config = {
   development: true
 }
 
+/* TODO: add your app theme color here. it's dummy setup for now */
 export enum appColors {
   primary = '#fb5200',
   secondary = '#f9db4a',

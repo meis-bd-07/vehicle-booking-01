@@ -57,4 +57,5 @@ export interface IBiddingItem {
     item: IEachBidding;
     index: number;
     length?: number;
+    goToDetails: (item: IEachBidding) => void
 }

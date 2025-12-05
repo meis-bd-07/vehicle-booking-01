@@ -69,7 +69,7 @@ const style = StyleSheet.create({
   leftContainer: {flexDirection: 'row', flex: 1, marginRight: rs(24)},
   text: {
     flexShrink: 1,
-    ...typographies.bodyMedium,
+    ...typographies.textS14L21W400,
     color: colors.white,
   },
 });

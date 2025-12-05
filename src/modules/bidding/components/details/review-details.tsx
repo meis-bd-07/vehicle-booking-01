@@ -20,7 +20,7 @@ import TikMarkIcon from "@assets/icons/core/tik-mark";
 const DriverReviews = React.lazy(() => import('./driver-reviews'));
 
 const ReviewDetails = ({item}: {item: IEachBidding}) => {
-    const {ratingTypeChange, reviews, orderChange}= useDriverReviewState(s => s);
+    const {ratingTypeChange, orderChange}= useDriverReviewState(s => s);
     const [active, setActive] = useState(reviewOrderSorting[0].title)
 
     return (
@@ -32,7 +32,7 @@ const ReviewDetails = ({item}: {item: IEachBidding}) => {
                         {titles.driverReview}
                     </Text>
                     <Text style={[typographies.textS14L21W400, {color: getHexaOpacityColorCode(colors.pureBlack, .64)}]}>
-                        {`(${convertNumberToBangla(formatNumber(item.totalReviews))})`} - {reviews.length}
+                        {`(${convertNumberToBangla(formatNumber(item.totalReviews))})`}
                     </Text>
                 </View>
                 <AppMenu 
