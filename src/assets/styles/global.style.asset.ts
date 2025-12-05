@@ -56,7 +56,8 @@ export const globalStyles = StyleSheet.create({
   pt12: {paddingTop: 12},
   pb10: {paddingBottom: 10},
   pb16: {paddingBottom: 16},
-  fontBold: {fontWeight: 'bold'}
+  mt10: {marginTop: 10},
+  fontBold: {fontWeight: 'bold'},
 });
 
 export const customPadding = (top = 0, right = 0, bottom = 0, left = 0) => {

@@ -31,9 +31,9 @@ const driverDetailsStyles = StyleSheet.create({
         borderRadius: 8,
         backgroundColor: getHexaOpacityColorCode(colors.heartRed, .05),
         flexDirection: 'row',
-        padding: 16,
         gap: 10,
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        overflow: 'hidden'
     },
     avgRatingWrp: {
         gap: 6,
@@ -143,6 +143,10 @@ const driverDetailsStyles = StyleSheet.create({
     menuText: {
         ...typographies.textS12L21W400,
         color: getHexaOpacityColorCode(colors.pureBlack, .88)
+    },
+    stickyHeader: {
+        backgroundColor: colors.white,
+        // gap: 10
     }
 });
 

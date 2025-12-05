@@ -34,9 +34,10 @@ const AppMenu = ({
     renderMenu,
     menuStyles = {},
     menuOptionStyles = {},
-    onSelect
+    onSelect,
+    defaultValue
 }: IAppMenu) => {
-    const [active, setActive] = useState<number | string | null>(null);
+    const [active, setActive] = useState<number | string | null>(defaultValue || null);
 
     const renderPlaceholder = () => {
         if(placeholderText){

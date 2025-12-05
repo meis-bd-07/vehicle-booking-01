@@ -11,11 +11,14 @@ import getHexaOpacityColorCode from "@utils/helpers/get-hexa-opacity-color-code"
 import { convertNumberToBangla } from "@utils/helpers/number-converter";
 import { useMemo } from "react";
 import { Text, View } from "react-native";
+import Animated, { Extrapolate, interpolate, SharedValue, useAnimatedStyle } from "react-native-reanimated";
 
-const RatingDetails = ({ratings, totalRating}: {ratings: IDriverRatings[]; totalRating: number}) => {
+const HEIGHT = 112 + 20;
 
+const RatingDetails = ({
+    ratings, totalRating, scrollY
+}: {ratings: IDriverRatings[]; totalRating: number; scrollY: SharedValue<number>}) => {
     const ratingsMemo = useMemo(() => Bidding.makeRatingArray(ratings), [ratings])
-
     const eachRating = (item: {type: string, percentage: string, value: number}, index: number) => {
         return (
             <View style={styles.eachRatingWrp} key={index}>
@@ -33,8 +36,16 @@ const RatingDetails = ({ratings, totalRating}: {ratings: IDriverRatings[]; total
         )
     }
 
+    const headerAStyle = useAnimatedStyle(() => {
+        return {
+            height: interpolate(scrollY.value, [0, HEIGHT], [HEIGHT, 0], Extrapolate.CLAMP),
+            paddingVertical: interpolate(scrollY.value, [0, 16], [16, 0], Extrapolate.CLAMP),
+            // transform: [{translateY: interpolate(scrollY.value, [0, HEIGHT],[0, -HEIGHT],Extrapolate.CLAMP)}],
+        };
+    });
+
     return (
-        <View style={styles.ratingContainer}>
+        <Animated.View style={[styles.ratingContainer, {maxHeight: HEIGHT}, headerAStyle]}>
             <View style={styles.avgRatingWrp}>
                 <View style={[globalStyles.flexRow, globalStyles.gap6]}>
                     <View style={styles.avgRatingIcon}>
@@ -52,7 +63,7 @@ const RatingDetails = ({ratings, totalRating}: {ratings: IDriverRatings[]; total
             <View style={styles.ratingPercentageWrp}>
                 {ratingsMemo.map((item, index) => eachRating(item, index))}
             </View>
-        </View>
+        </Animated.View>
     )
 
 }

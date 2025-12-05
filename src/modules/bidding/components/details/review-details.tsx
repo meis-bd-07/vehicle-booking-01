@@ -1,85 +1,17 @@
-import { IRatingTabs, ratingTabs, reviewOrderSorting } from "@assets/dropdown/driver-details";
-import FilterIcon from "@assets/icons/core/filter";
-import StarIcon from "@assets/icons/core/star";
-import { colors } from "@assets/styles/colors.style.asset";
 import { globalStyles } from "@assets/styles/global.style.asset";
-import { typographies } from "@assets/styles/typographies.style.asset";
-import { titles } from "@assets/text-and-message/titles.asset";
-import styles from "@bidding_modules/styles/driver-details-style";
 import { IEachBidding } from "@bidding_modules/types/bidding-list";
-import Tabs from "@components/tabs/tabs";
-import getHexaOpacityColorCode from "@utils/helpers/get-hexa-opacity-color-code";
-import { convertNumberToBangla, formatNumber } from "@utils/helpers/number-converter";
-import { ActivityIndicator, Text, View } from "react-native";
-import { useDriverReviewState } from "@states/driver/driver-review.state";
-import { ISortingOrder, IStar } from "@type/global";
-import React, { Suspense, useState } from "react";
-import AppMenu from "@components/menu/app-menu";
-import TikMarkIcon from "@assets/icons/core/tik-mark";
-
-const DriverReviews = React.lazy(() => import('./driver-reviews'));
+import { View } from "react-native";
+import React from "react";
+import DriverReviews from "./driver-reviews";
 
 const ReviewDetails = ({item}: {item: IEachBidding}) => {
-    const {ratingTypeChange, orderChange}= useDriverReviewState(s => s);
-    const [active, setActive] = useState(reviewOrderSorting[0].title)
 
     return (
         <View style={[globalStyles.gap12, globalStyles.flexShrink1]}>
-            {/* title header */}
-            <View style={styles.reviewHeader}>
-                <View style={styles.reviewHeaderLeft}>
-                    <Text style={[typographies.textS14L21W500, {color: getHexaOpacityColorCode(colors.pureBlack, .88)}]}>
-                        {titles.driverReview}
-                    </Text>
-                    <Text style={[typographies.textS14L21W400, {color: getHexaOpacityColorCode(colors.pureBlack, .64)}]}>
-                        {`(${convertNumberToBangla(formatNumber(item.totalReviews))})`}
-                    </Text>
-                </View>
-                <AppMenu 
-                    triggerUi={(
-                        <View style={styles.reviewHeaderRight}>
-                            <Text style={[typographies.textS12L21W400, {color: getHexaOpacityColorCode(colors.pureBlack, .88)}]}>{active}</Text>
-                            <FilterIcon />
-                        </View>
-                    )}
-                    onSelect={({value, title}) => {
-                        orderChange(value as ISortingOrder)
-                        setActive(title)
-                    }}
-                    options={reviewOrderSorting}
-                    renderMenu={({index: optionIndex, isActive, item: option}) => (
-                        <View style={styles.menuOption} key={optionIndex}>
-                            <Text style={styles.menuText} numberOfLines={1}>{option.title}</Text>
-                            {isActive && <TikMarkIcon />}
-                        </View>
-                    )}
-                    menuStyles={styles.menu}
-                />
-            </View>
-
-            {/* rating filter tab */}
-            <Tabs<IRatingTabs>
-                tabs={ratingTabs}
-                handleChangeTab={(tab) => ratingTypeChange(tab.value as IStar | 'all')}
-                renderTab={({index, isActive, item: eachTab}) => (
-                    <View key={index} style={[styles.eachTab, isActive ? styles.activeTab : styles.inactiveTab]}>
-                        <Text style={[styles.tabText, isActive ? styles.activeTabText : styles.inactiveTabText]}>
-                            {eachTab.title}
-                        </Text>
-                        {eachTab.hasIcon && (
-                            <StarIcon 
-                                height={12} 
-                                width={12} 
-                                fill={isActive ? colors.white : getHexaOpacityColorCode(colors.pureBlack, .54)}
-                            />
-                        )}
-                    </View>
-                )}
-                defaultActive={0}
+            <DriverReviews 
+                driverId={item.driver.id}
+                item={item}
             />
-            <Suspense fallback={<ActivityIndicator size="large" color={colors.primary} />}>
-                <DriverReviews driverId={item.driver.id} />
-            </Suspense>
         </View>
     )
 };

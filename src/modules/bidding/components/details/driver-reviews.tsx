@@ -10,12 +10,21 @@ import { placeholders } from "@assets/text-and-message/placeholders.asset";
 import { typographies } from "@assets/styles/typographies.style.asset";
 import getHexaOpacityColorCode from "@utils/helpers/get-hexa-opacity-color-code";
 import rs from "@assets/styles/responsiveSize.style.asset";
+import { useSharedValue } from "react-native-reanimated";
+import React from "react";
+import { IEachBidding } from "@bidding_modules/types/bidding-list";
+import ReviewDetailsStickyHeader from "./review-details-header";
 
-const DriverReviews = ({driverId}: {driverId: IUid}) => {
+const DriverReviews = ({driverId, item: fullItem }: {
+    driverId: IUid;
+    item: IEachBidding;
+}) => {
     const { 
         getItemCount, getItem, refreshing, loadMore,
         reviews, isLoading, isLoadingMore, isRefreshing, showViewMore
     } = useDriverReviewHook(driverId);
+
+    const scrollY = useSharedValue(0);
 
     return (
         <VirtualizedList
@@ -45,6 +54,14 @@ const DriverReviews = ({driverId}: {driverId: IUid}) => {
             onEndReached={loadMore}
             onEndReachedThreshold={0.1}
             scrollEnabled={!showViewMore}
+            stickyHeaderIndices={[0]}
+            onScroll={({nativeEvent}) => {
+                if(!isLoading){
+                    scrollY.value = nativeEvent.contentOffset.y;
+                }
+            }}
+            scrollEventThrottle={16}
+            ListHeaderComponent={<ReviewDetailsStickyHeader scrollY={scrollY} item={fullItem} />}
         />
     )
 };
