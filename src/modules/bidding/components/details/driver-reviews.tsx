@@ -13,10 +13,9 @@ import rs from "@assets/styles/responsiveSize.style.asset";
 
 const DriverReviews = ({driverId}: {driverId: IUid}) => {
     const { 
-        reviews, 
         getItemCount, getItem, refreshing, loadMore,
-        isLoading, isLoadingMore, isRefreshing
-    } = useDriverReviewHook(driverId)
+        reviews, isLoading, isLoadingMore, isRefreshing, showViewMore
+    } = useDriverReviewHook(driverId);
 
     return (
         <VirtualizedList
@@ -45,6 +44,7 @@ const DriverReviews = ({driverId}: {driverId: IUid}) => {
             refreshControl={<RefreshControl refreshing={isRefreshing} onRefresh={refreshing} />}
             onEndReached={loadMore}
             onEndReachedThreshold={0.1}
+            scrollEnabled={!showViewMore}
         />
     )
 };

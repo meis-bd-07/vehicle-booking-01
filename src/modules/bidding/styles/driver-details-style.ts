@@ -77,11 +77,11 @@ const driverDetailsStyles = StyleSheet.create({
     },
     /* review */
     reviewHeader: {
-        height: 21,
+        height: 33,
         flexDirection: 'row',
         gap: 10,
         alignItems: 'center',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
     },
     reviewHeaderLeft: {
         flexDirection: 'row',
@@ -129,6 +129,20 @@ const driverDetailsStyles = StyleSheet.create({
         flexDirection: 'row', 
         ...customPadding(3, 10, 3, 10), 
         backgroundColor: colors.pureBlack
+    },
+    /* menu */
+    menu: {paddingVertical: 8, borderRadius: 4, gap: 0},
+    menuOption:{
+        height: 33,
+        ...customPadding(6, 16, 6, 16),
+        gap: 8,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+    },
+    menuText: {
+        ...typographies.textS12L21W400,
+        color: getHexaOpacityColorCode(colors.pureBlack, .88)
     }
 });
 

@@ -117,11 +117,12 @@ export const useDriverReviewState = create<State & Action>((set, get) => ({
     },
     orderChange: async (order) => {
         const getting = get().getting;
+        const preOrder = get().order;
+        if(preOrder === order) return;
         set({isRefreshing: false, page: DEFAULT_PAGE, hasMore: false, isLoading: true, order: order, reviews: []});
         await getting()
     },
     toggleViewMore: (flag) => {
-        console.log('-----------')
         set({showViewMore: flag})
     }
 }))

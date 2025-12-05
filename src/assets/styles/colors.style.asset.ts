@@ -33,7 +33,8 @@ const baseColors = {
   red001: '#EBE1E1',
   gray200: '#EEEEEE',
   border: '#EBEBEB',
-  white10: '#F5F5F5'
+  white10: '#F5F5F5',
+  check: '#4285F4'
 };
 const propertiesColor = {
   button: {

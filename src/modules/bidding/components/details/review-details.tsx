@@ -1,4 +1,4 @@
-import { IRatingTabs, ratingTabs } from "@assets/dropdown/driver-details";
+import { IRatingTabs, ratingTabs, reviewOrderSorting } from "@assets/dropdown/driver-details";
 import FilterIcon from "@assets/icons/core/filter";
 import StarIcon from "@assets/icons/core/star";
 import { colors } from "@assets/styles/colors.style.asset";
@@ -10,15 +10,18 @@ import { IEachBidding } from "@bidding_modules/types/bidding-list";
 import Tabs from "@components/tabs/tabs";
 import getHexaOpacityColorCode from "@utils/helpers/get-hexa-opacity-color-code";
 import { convertNumberToBangla, formatNumber } from "@utils/helpers/number-converter";
-import { ActivityIndicator, Text, TouchableOpacity, View } from "react-native";
+import { ActivityIndicator, Text, View } from "react-native";
 import { useDriverReviewState } from "@states/driver/driver-review.state";
-import { IStar } from "@type/global";
-import React, { Suspense } from "react";
+import { ISortingOrder, IStar } from "@type/global";
+import React, { Suspense, useState } from "react";
+import AppMenu from "@components/menu/app-menu";
+import TikMarkIcon from "@assets/icons/core/tik-mark";
 
 const DriverReviews = React.lazy(() => import('./driver-reviews'));
 
 const ReviewDetails = ({item}: {item: IEachBidding}) => {
-    const {ratingTypeChange, reviews}= useDriverReviewState(s => s);
+    const {ratingTypeChange, reviews, orderChange}= useDriverReviewState(s => s);
+    const [active, setActive] = useState(reviewOrderSorting[0].title)
 
     return (
         <View style={[globalStyles.gap12, globalStyles.flexShrink1]}>
@@ -32,11 +35,26 @@ const ReviewDetails = ({item}: {item: IEachBidding}) => {
                         {`(${convertNumberToBangla(formatNumber(item.totalReviews))})`} - {reviews.length}
                     </Text>
                 </View>
-                {/* TODO: make a dropdown component */}
-                <TouchableOpacity style={styles.reviewHeaderRight} activeOpacity={0.3}>
-                    <Text style={[typographies.textS12L21W400, {color: getHexaOpacityColorCode(colors.pureBlack, .88)}]}>{`নতুন\u00A0থেকে\u00A0পুরানো`}</Text>
-                    <FilterIcon />
-                </TouchableOpacity>
+                <AppMenu 
+                    triggerUi={(
+                        <View style={styles.reviewHeaderRight}>
+                            <Text style={[typographies.textS12L21W400, {color: getHexaOpacityColorCode(colors.pureBlack, .88)}]}>{active}</Text>
+                            <FilterIcon />
+                        </View>
+                    )}
+                    onSelect={({value, title}) => {
+                        orderChange(value as ISortingOrder)
+                        setActive(title)
+                    }}
+                    options={reviewOrderSorting}
+                    renderMenu={({index: optionIndex, isActive, item: option}) => (
+                        <View style={styles.menuOption} key={optionIndex}>
+                            <Text style={styles.menuText} numberOfLines={1}>{option.title}</Text>
+                            {isActive && <TikMarkIcon />}
+                        </View>
+                    )}
+                    menuStyles={styles.menu}
+                />
             </View>
 
             {/* rating filter tab */}

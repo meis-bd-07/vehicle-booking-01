@@ -7,19 +7,22 @@ import { navigationRef } from "@packages/navigation";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { globalStyles } from "@assets/styles/global.style.asset";
 import BottomSheetIndex from "@components/bottom-sheet";
+import { MenuProvider } from "react-native-popup-menu";
 
 const MainIndex = () => {
     return (
         <GestureHandlerRootView style={globalStyles.flex1}>
             <SafeAreaProvider>
-                <LocalizationProvider>
-                    <NavigationContainer ref={navigationRef}>
-                        <AppWrapper>
-                            <RouterIndex />
-                        </AppWrapper>
-                        <BottomSheetIndex />
-                    </NavigationContainer>
-                </LocalizationProvider>
+                <MenuProvider>
+                    <LocalizationProvider>
+                        <NavigationContainer ref={navigationRef}>
+                            <AppWrapper>
+                                <RouterIndex />
+                            </AppWrapper>
+                            <BottomSheetIndex />
+                        </NavigationContainer>
+                    </LocalizationProvider>
+                </MenuProvider>
             </SafeAreaProvider>
         </GestureHandlerRootView>
     )

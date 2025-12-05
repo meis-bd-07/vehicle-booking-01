@@ -107,7 +107,7 @@ export const typographies = StyleSheet.create({
   },
   textS12L21W400: {
     fontFamily: fonts.kLatinBook,
-    fontWeight: '500',
+    fontWeight: '400',
     fontSize: rs(12),
     lineHeight: rs(21),
     letterSpacing: 0,
@@ -150,4 +150,6 @@ export const typographies = StyleSheet.create({
     color: colors.black,
     textAlign: 'left',
   }
+
 });
+

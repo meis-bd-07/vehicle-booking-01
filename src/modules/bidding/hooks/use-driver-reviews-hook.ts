@@ -13,6 +13,7 @@ const useDriverReviewHook = (driverId: IUid) => {
         refreshing,
         reviews,
         storeId,
+        showViewMore
     } = useDriverReviewState(s => s)
 
     useLayoutEffect(() => {
@@ -31,7 +32,8 @@ const useDriverReviewHook = (driverId: IUid) => {
         isLoadingMore,
         isRefreshing,
         refreshing,
-        loadMore
+        loadMore,
+        showViewMore
     }
 };
 
