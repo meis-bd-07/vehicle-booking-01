@@ -6,6 +6,7 @@ import LocalizationProvider from "@providers/localization/Localization.provider"
 import { navigationRef } from "@packages/navigation";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { globalStyles } from "@assets/styles/global.style.asset";
+import BottomSheetIndex from "@components/bottom-sheet";
 
 const MainIndex = () => {
     return (
@@ -16,6 +17,7 @@ const MainIndex = () => {
                         <AppWrapper>
                             <RouterIndex />
                         </AppWrapper>
+                        <BottomSheetIndex />
                     </NavigationContainer>
                 </LocalizationProvider>
             </SafeAreaProvider>

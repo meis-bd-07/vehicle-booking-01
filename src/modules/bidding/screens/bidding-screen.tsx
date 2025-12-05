@@ -11,7 +11,6 @@ import CountDown from "@components/count-down/count-down";
 import Header from "@components/header/header";
 import PrivateContainer from "@routes/layouts/private.container";
 import timeFormat from "@utils/helpers/time-format";
-import React from "react";
 import {ActivityIndicator, RefreshControl, Text, View, VirtualizedList} from "react-native";
 
 export default function Bidding() {
@@ -37,12 +36,17 @@ export default function Bidding() {
                 style={styles.listContainer}
                 ListHeaderComponent={<View style={styles.listHeader}><Text style={[typographies.listHeaderW700]}>{titles.biddingOnGoing}</Text></View>}
                 showsVerticalScrollIndicator={false}
-                ListEmptyComponent={<View style={globalStyles.centerView}><Text style={[typographies.textSubTitleW400]}>{titles.noBiddingItem}</Text></View>}
+                ListEmptyComponent={(
+                    <View style={globalStyles.centerView}>
+                        {isLoading && <ActivityIndicator color={colors.primary} size={"large"} />}
+                        {!isLoading &&<Text style={[typographies.textSubTitleW400]}>{titles.noBiddingItem}</Text>}
+                    </View>
+                )}
                 contentContainerStyle={list.length === 0 || isLoading ? globalStyles.emptyFlexBox: globalStyles.gap10}
                 ListFooterComponent={isLoadingMore ? <View style={{height: rs(30)}}><ActivityIndicator color={colors.primary} /></View> : <View style={globalStyles.pb16} />}
                 refreshControl={<RefreshControl refreshing={isRefreshing} onRefresh={refreshing} />}
                 onEndReached={loadMore}
-                onEndReachedThreshold={3}
+                onEndReachedThreshold={0.1}
                 stickyHeaderIndices={[0]}
             />
 

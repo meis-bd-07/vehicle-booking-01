@@ -11,21 +11,58 @@ import { IBiddingItem } from "@bidding_modules/types/bidding-list";
 import ImagePreview from "@components/image-preview/Index.component";
 import Bidding from "@controllers/models/Bidding";
 import getHexaOpacityColorCode from "@utils/helpers/get-hexa-opacity-color-code";
-import showAlertWithOneAction from "@utils/helpers/show-aleart-with-one-action";
 import { Text, TouchableOpacity, View } from "react-native";
 import BiddingItemCheckHandler from "./bidding-item-check-handler";
+import { bsManager } from "@components/bottom-sheet";
+import DetailsHeader from "./details/header";
+import { useDriverReviewState } from "@states/driver/driver-review.state";
+import DriverDetails from "./details/driver-details";
+import { SCREEN_HEIGHT } from "@assets/ts/core.data";
+import ViewMore from "./details/view-more";
+import { useCallback } from "react";
 
 const BiddingItem = ({item, index}: IBiddingItem) => {
+    const storeId = useDriverReviewState(s => s).storeId;
+    const toggleViewMore = useDriverReviewState(s => s).toggleViewMore;
+
+    const renderFooter = useCallback(
+        (scrollToFullHeight: () => void) => (<ViewMore scrollToFullHeight={scrollToFullHeight} />),
+        []
+    );
+
+    const goToDetails = () => {
+        storeId(item.driver.id);
+        bsManager.show({
+            flag: true,
+            bottomSheetProps: {
+                fixedHeader: <DetailsHeader item={item} />,
+                fullHeight: true,
+                refreshAction: true,
+                onGestureStart: () => {
+                    toggleViewMore(false);
+                },
+                footer: renderFooter
+            },
+            component: <DriverDetails item={item} />,
+            onClose: () => {
+                storeId(null);
+                toggleViewMore(true);
+            },
+            scrollTo: -(SCREEN_HEIGHT * 0.63)
+        })
+    }
+
     return (
-        <TouchableOpacity key={index} style={styles.container} activeOpacity={0.7} onPress={() => showAlertWithOneAction({title: 'item clicked'})}>
+        <TouchableOpacity key={index} style={styles.container} activeOpacity={0.7} onPress={goToDetails}>
             <ImagePreview 
                 source={{uri: item.driver.image || ''}}  
                 styles={styles.image}
                 borderRadius={26}
                 containerStyle={{backgroundColor: colors.transparent}}
+                skeletonStyles={styles.image}
             />
             <View style={styles.body}>
-                <View style={globalStyles.gap10}>
+                <View style={[globalStyles.gap10, globalStyles.flexShrink1]}>
                     <View style={globalStyles.gap2}>
                         <Text style={typographies.nameTextW400} numberOfLines={1}>{item.driver.name || 'No name found'}</Text>
                         <Text style={typographies.textSubTitleW400}>

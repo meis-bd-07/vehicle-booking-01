@@ -2,16 +2,15 @@ import { config } from "@config";
 import { IGettingBiddingList } from "@type/services/bidding-list";
 import { biddingList } from "./dummy";
 
-
-
 class ListService {
     async getList(payload: IGettingBiddingList){
-        console.log('payload', payload)
         if(config.development){
+            const startPoint = payload.page * payload.perPage;
+            const endPoint = startPoint + payload.perPage;
             return {
                 status: true,
                 message: 'Got list',
-                data: biddingList,
+                data: biddingList.slice(startPoint, endPoint ),
                 responseCode: 200,
                 extraData: null
             }

@@ -11,6 +11,18 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		89EE17263CC5486993A93324 /* KohinoorLatin-Black-BF63c76510c679a.otf in Resources */ = {isa = PBXBuildFile; fileRef = 57E04BABC5B243159748D088 /* KohinoorLatin-Black-BF63c76510c679a.otf */; };
+		28BEF399F9384060B40F20AC /* KohinoorLatin-BlackItalic-BF63c76510c5583.otf in Resources */ = {isa = PBXBuildFile; fileRef = 003CA60E6E5149B8B4FAE1DE /* KohinoorLatin-BlackItalic-BF63c76510c5583.otf */; };
+		15A67121682A4BBA919CF67D /* KohinoorLatin-Bold-BF63c76513f09da.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FA81E938B55439DBD07771E /* KohinoorLatin-Bold-BF63c76513f09da.otf */; };
+		92B492361A074E339B107540 /* KohinoorLatin-BoldItalic-BF63c7651386cfd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A6BBDD08483402DBE8AF7DA /* KohinoorLatin-BoldItalic-BF63c7651386cfd.otf */; };
+		30BE2A7F6E3E41E2A659279E /* KohinoorLatin-Book-BF63c76513e60f1.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2F69098C3B94E4296786459 /* KohinoorLatin-Book-BF63c76513e60f1.otf */; };
+		7AF6626837504CC198B27F9A /* KohinoorLatin-BookItalic-BF63c76513bc679.otf in Resources */ = {isa = PBXBuildFile; fileRef = F165B5A2171A4BF1BF52B50A /* KohinoorLatin-BookItalic-BF63c76513bc679.otf */; };
+		35628E07976A4D48B6273051 /* KohinoorLatin-Demi-BF63c765144638d.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39F4542F846A4576B072DDE2 /* KohinoorLatin-Demi-BF63c765144638d.otf */; };
+		95E7447BAECF4EDC82534A76 /* KohinoorLatin-DemiItalic-BF63c7651389346.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E8DF2ADF02647978ED9F79F /* KohinoorLatin-DemiItalic-BF63c7651389346.otf */; };
+		6EB14252100048C687601D3B /* KohinoorLatin-Light-BF63c76513209af.otf in Resources */ = {isa = PBXBuildFile; fileRef = E6938FD340F644B18D9453DC /* KohinoorLatin-Light-BF63c76513209af.otf */; };
+		56DA73E67B0D40D98B215B0B /* KohinoorLatin-LightItalic-BF63c7651347850.otf in Resources */ = {isa = PBXBuildFile; fileRef = D4900239CA754BFB89388E72 /* KohinoorLatin-LightItalic-BF63c7651347850.otf */; };
+		AF38EEA97D094EB48671103B /* KohinoorLatin-Medium-BF63c76513dba4c.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ED581F6458446A089E684F4 /* KohinoorLatin-Medium-BF63c76513dba4c.otf */; };
+		91C84CBA6207418B9AE4B9F2 /* KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD213BED0F6A46E5A76B0709 /* KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,18 @@
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SmartCarBooking/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SmartCarBooking/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		57E04BABC5B243159748D088 /* KohinoorLatin-Black-BF63c76510c679a.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-Black-BF63c76510c679a.otf"; path = "../assets/fonts/KohinoorLatin-Black-BF63c76510c679a.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		003CA60E6E5149B8B4FAE1DE /* KohinoorLatin-BlackItalic-BF63c76510c5583.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-BlackItalic-BF63c76510c5583.otf"; path = "../assets/fonts/KohinoorLatin-BlackItalic-BF63c76510c5583.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1FA81E938B55439DBD07771E /* KohinoorLatin-Bold-BF63c76513f09da.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-Bold-BF63c76513f09da.otf"; path = "../assets/fonts/KohinoorLatin-Bold-BF63c76513f09da.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9A6BBDD08483402DBE8AF7DA /* KohinoorLatin-BoldItalic-BF63c7651386cfd.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-BoldItalic-BF63c7651386cfd.otf"; path = "../assets/fonts/KohinoorLatin-BoldItalic-BF63c7651386cfd.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F2F69098C3B94E4296786459 /* KohinoorLatin-Book-BF63c76513e60f1.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-Book-BF63c76513e60f1.otf"; path = "../assets/fonts/KohinoorLatin-Book-BF63c76513e60f1.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F165B5A2171A4BF1BF52B50A /* KohinoorLatin-BookItalic-BF63c76513bc679.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-BookItalic-BF63c76513bc679.otf"; path = "../assets/fonts/KohinoorLatin-BookItalic-BF63c76513bc679.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		39F4542F846A4576B072DDE2 /* KohinoorLatin-Demi-BF63c765144638d.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-Demi-BF63c765144638d.otf"; path = "../assets/fonts/KohinoorLatin-Demi-BF63c765144638d.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1E8DF2ADF02647978ED9F79F /* KohinoorLatin-DemiItalic-BF63c7651389346.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-DemiItalic-BF63c7651389346.otf"; path = "../assets/fonts/KohinoorLatin-DemiItalic-BF63c7651389346.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E6938FD340F644B18D9453DC /* KohinoorLatin-Light-BF63c76513209af.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-Light-BF63c76513209af.otf"; path = "../assets/fonts/KohinoorLatin-Light-BF63c76513209af.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D4900239CA754BFB89388E72 /* KohinoorLatin-LightItalic-BF63c7651347850.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-LightItalic-BF63c7651347850.otf"; path = "../assets/fonts/KohinoorLatin-LightItalic-BF63c7651347850.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8ED581F6458446A089E684F4 /* KohinoorLatin-Medium-BF63c76513dba4c.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-Medium-BF63c76513dba4c.otf"; path = "../assets/fonts/KohinoorLatin-Medium-BF63c76513dba4c.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BD213BED0F6A46E5A76B0709 /* KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf */ = {isa = PBXFileReference; name = "KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf"; path = "../assets/fonts/KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +98,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				CDB61EFA71004B699E2B0173 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -96,6 +121,26 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		CDB61EFA71004B699E2B0173 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				57E04BABC5B243159748D088 /* KohinoorLatin-Black-BF63c76510c679a.otf */,
+				003CA60E6E5149B8B4FAE1DE /* KohinoorLatin-BlackItalic-BF63c76510c5583.otf */,
+				1FA81E938B55439DBD07771E /* KohinoorLatin-Bold-BF63c76513f09da.otf */,
+				9A6BBDD08483402DBE8AF7DA /* KohinoorLatin-BoldItalic-BF63c7651386cfd.otf */,
+				F2F69098C3B94E4296786459 /* KohinoorLatin-Book-BF63c76513e60f1.otf */,
+				F165B5A2171A4BF1BF52B50A /* KohinoorLatin-BookItalic-BF63c76513bc679.otf */,
+				39F4542F846A4576B072DDE2 /* KohinoorLatin-Demi-BF63c765144638d.otf */,
+				1E8DF2ADF02647978ED9F79F /* KohinoorLatin-DemiItalic-BF63c7651389346.otf */,
+				E6938FD340F644B18D9453DC /* KohinoorLatin-Light-BF63c76513209af.otf */,
+				D4900239CA754BFB89388E72 /* KohinoorLatin-LightItalic-BF63c7651347850.otf */,
+				8ED581F6458446A089E684F4 /* KohinoorLatin-Medium-BF63c76513dba4c.otf */,
+				BD213BED0F6A46E5A76B0709 /* KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -159,6 +204,18 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				89EE17263CC5486993A93324 /* KohinoorLatin-Black-BF63c76510c679a.otf in Resources */,
+				28BEF399F9384060B40F20AC /* KohinoorLatin-BlackItalic-BF63c76510c5583.otf in Resources */,
+				15A67121682A4BBA919CF67D /* KohinoorLatin-Bold-BF63c76513f09da.otf in Resources */,
+				92B492361A074E339B107540 /* KohinoorLatin-BoldItalic-BF63c7651386cfd.otf in Resources */,
+				30BE2A7F6E3E41E2A659279E /* KohinoorLatin-Book-BF63c76513e60f1.otf in Resources */,
+				7AF6626837504CC198B27F9A /* KohinoorLatin-BookItalic-BF63c76513bc679.otf in Resources */,
+				35628E07976A4D48B6273051 /* KohinoorLatin-Demi-BF63c765144638d.otf in Resources */,
+				95E7447BAECF4EDC82534A76 /* KohinoorLatin-DemiItalic-BF63c7651389346.otf in Resources */,
+				6EB14252100048C687601D3B /* KohinoorLatin-Light-BF63c76513209af.otf in Resources */,
+				56DA73E67B0D40D98B215B0B /* KohinoorLatin-LightItalic-BF63c7651347850.otf in Resources */,
+				AF38EEA97D094EB48671103B /* KohinoorLatin-Medium-BF63c76513dba4c.otf in Resources */,
+				91C84CBA6207418B9AE4B9F2 /* KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,6 +30,10 @@ const baseColors = {
   gray7: '#D8D8D8',
   heartRed: '#B00000',
   heartRedOpacity: '#f6e5e5',
+  red001: '#EBE1E1',
+  gray200: '#EEEEEE',
+  border: '#EBEBEB',
+  white10: '#F5F5F5'
 };
 const propertiesColor = {
   button: {

@@ -1,0 +1,53 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/KohinoorLatin-Black-BF63c76510c679a.otf",
+      "sha1": "e418105d858be4bc53c5350ca744d8d641e20f4c"
+    },
+    {
+      "path": "assets/fonts/KohinoorLatin-BlackItalic-BF63c76510c5583.otf",
+      "sha1": "fe15884bf12c1256317a5f873f312f99a3df8d17"
+    },
+    {
+      "path": "assets/fonts/KohinoorLatin-Bold-BF63c76513f09da.otf",
+      "sha1": "30f9fa2a2d3c61516acb0da4b154256c9fdfb57e"
+    },
+    {
+      "path": "assets/fonts/KohinoorLatin-BoldItalic-BF63c7651386cfd.otf",
+      "sha1": "6c2bbe3fffb20748bb98ec77eb9be9ec06ccb2ee"
+    },
+    {
+      "path": "assets/fonts/KohinoorLatin-Book-BF63c76513e60f1.otf",
+      "sha1": "48b3849a827954f4c574606fc73319076c83a728"
+    },
+    {
+      "path": "assets/fonts/KohinoorLatin-BookItalic-BF63c76513bc679.otf",
+      "sha1": "07577dc2621db81fbfee70623527086b79f75f98"
+    },
+    {
+      "path": "assets/fonts/KohinoorLatin-Demi-BF63c765144638d.otf",
+      "sha1": "23d12a48a848f3843eb9e557c7fd04fa53805879"
+    },
+    {
+      "path": "assets/fonts/KohinoorLatin-DemiItalic-BF63c7651389346.otf",
+      "sha1": "22d8c24b77ca433b3217278aa04d3444169f54b8"
+    },
+    {
+      "path": "assets/fonts/KohinoorLatin-Light-BF63c76513209af.otf",
+      "sha1": "b0434123c4a2123c79dd5a2c28f84e16e67d62a7"
+    },
+    {
+      "path": "assets/fonts/KohinoorLatin-LightItalic-BF63c7651347850.otf",
+      "sha1": "e89228520be65c2a09d5830ddcd3db3b9648ee26"
+    },
+    {
+      "path": "assets/fonts/KohinoorLatin-Medium-BF63c76513dba4c.otf",
+      "sha1": "86c1691171e6aa30973745443f451716cb6a213c"
+    },
+    {
+      "path": "assets/fonts/KohinoorLatin-MediumItalic-BF63c76513cfcb2.otf",
+      "sha1": "4b5273d4a6c12b7800e768103bdd333286f6ea0f"
+    }
+  ]
+}

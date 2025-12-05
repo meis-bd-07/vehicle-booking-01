@@ -1,6 +1,6 @@
 import { IEachBidding } from "@bidding_modules/types/bidding-list";
 
-const items: IEachBidding[] = Array.from({ length: 24 }, (_, i) => {
+const items: IEachBidding[] = Array.from({ length: 44 }, (_, i) => {
     const index = i + 2;
     return {
         id: index,
@@ -22,6 +22,7 @@ const items: IEachBidding[] = Array.from({ length: 24 }, (_, i) => {
         ],
         totalReviews: Math.floor(Math.random() * 200),
         totalTrip: Math.floor(Math.random() * 50),
+        totalRating: Math.floor(Math.random() * 90),
         vehicle: {
             id: index + 20,
             length: `${6 + (index % 4)} feet`,
@@ -52,6 +53,7 @@ const biddingList: IEachBidding[] = [
     ],
     totalReviews: 123,
     totalTrip: 12,
+    totalRating: 22,
     vehicle: { id: 12, length: "7 feet", type: "open", capacity: "1 ton" },
   },
   ...items,

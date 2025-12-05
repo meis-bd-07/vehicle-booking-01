@@ -27,7 +27,7 @@ export interface IDriverRatings {
 }
 
 export interface ITag {
-    uid: string;
+    uid: IUid;
     title: string;
 }
 
@@ -50,6 +50,7 @@ export interface IEachBidding {
     totalTrip: number;
     totalReviews: number;
     vehicle: IVehicle;
+    totalRating: number;
 }
 
 export interface IBiddingItem {

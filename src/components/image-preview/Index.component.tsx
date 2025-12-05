@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Image, StyleSheet, View, ImageResizeMode, ImageStyle, StyleProp} from 'react-native';
+import {Image, StyleSheet, View, ImageResizeMode, ImageStyle, StyleProp, ViewStyle} from 'react-native';
 import { IFunctionalElementReturn } from '@type/element.interface';
 import isEmpty from '@utils/helpers/isEmpty.utility';
 import { imageLink } from '@assets/images/link.image.asset';
@@ -17,6 +17,7 @@ export interface IImagePreview {
   imageClassName?: string;
   isSvg?: boolean;
   svgProps?: Partial<SvgProps>
+  skeletonStyles?: StyleProp<ViewStyle>
 }
 
 const ImagePreview = ({
@@ -28,7 +29,8 @@ const ImagePreview = ({
   containerClassName = '',
   imageClassName = '',
   isSvg = false,
-  svgProps = {}
+  svgProps = {},
+  skeletonStyles = {}
 }: IImagePreview): IFunctionalElementReturn => {
   const [isLoading, setIsLoading] = useState(true);
   let image: any = typeof source === 'object' ? {...source} : source;
@@ -54,7 +56,7 @@ const ImagePreview = ({
         className={imageClassName}
       />)}
       {isLoading && (
-        <View style={style.loaderView}>
+        <View style={[style.loaderView, skeletonStyles]}>
           <BaseSkeleton
             height={'100%'}
             width={'100%'}

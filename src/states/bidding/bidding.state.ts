@@ -1,9 +1,11 @@
 import { DEFAULT_PAGE, DEFAULT_PER_PAGE } from "@assets/ts/core.data";
 import { IEachBidding } from "@bidding_modules/types/bidding-list"
 import BiddingListService from "@services/bidding/List";
+import { sleep } from "@utils/hooks/sleep.hook";
 import { create } from "zustand"
 
 type State =  {
+  apiBlock: boolean;
   list: IEachBidding[];
   page: number;
   perPage: number;
@@ -19,6 +21,7 @@ type Action = {
 }
 
 const initialState: State = {
+  apiBlock: false,
   list: [],
   page: DEFAULT_PAGE,
   perPage: DEFAULT_PER_PAGE,
@@ -32,12 +35,15 @@ export const useBiddingListState = create<State & Action>((set, get) => ({
   ...initialState,
   getting: async () => {
     try{
-      const {page, perPage, isRefreshing, list} = get();
+      const {page, perPage, isRefreshing, list, apiBlock} = get();
+      if(apiBlock){return}
       /* TODO: get data from api */
+      set({apiBlock: true})
+      await sleep(3000);
       const res = await BiddingListService.getList({page, perPage})
       let dataList: IEachBidding[] = [], hasMore = false
       if(res.status){
-        if(isRefreshing) dataList = res.data;
+        if(isRefreshing || page === DEFAULT_PAGE) dataList = res.data;
         else dataList = [...list, ...res.data];
         if(res.data.length === perPage) hasMore = true
       }
@@ -46,12 +52,13 @@ export const useBiddingListState = create<State & Action>((set, get) => ({
         list: dataList,
         page: page + 1,
         hasMore: hasMore,
-        isLoading: false, isLoadingMore: false, isRefreshing: false
+        isLoading: false, isLoadingMore: false, isRefreshing: false,
+        apiBlock: false
       });
     }
     catch(e){
       console.log('e', e)
-      set({isLoading: false, isLoadingMore: false, isRefreshing: false});
+      set({isLoading: false, isLoadingMore: false, isRefreshing: false, apiBlock: false});
     }
   },
   refreshing: async () => {
