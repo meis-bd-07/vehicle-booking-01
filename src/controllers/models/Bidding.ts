@@ -24,7 +24,6 @@ class BiddingModel {
             };
         })
     }
-
 }
 
 const Bidding = new BiddingModel();

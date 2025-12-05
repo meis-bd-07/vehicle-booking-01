@@ -9,7 +9,7 @@ export const STATUS_BAR_HEIGHT = StatusBar.currentHeight || 0;
 export const keyExtractor = (item: unknown, index: number) => index.toString();
 
 export const DEFAULT_PAGE = 0;
-export const DEFAULT_PER_PAGE = 20;
+export const DEFAULT_PER_PAGE = 15;
 
 export const PRICE_FLAG = {
     'bdt': '৳',

@@ -13,6 +13,7 @@ import Bidding from "@controllers/models/Bidding";
 import getHexaOpacityColorCode from "@utils/helpers/get-hexa-opacity-color-code";
 import { Text, TouchableOpacity, View } from "react-native";
 import BiddingItemCheckHandler from "./bidding-item-check-handler";
+import Vehicle from "@controllers/models/Vehicle";
 
 const BiddingItem = ({item, index, goToDetails}: IBiddingItem) => {
 
@@ -30,7 +31,7 @@ const BiddingItem = ({item, index, goToDetails}: IBiddingItem) => {
                     <View style={globalStyles.gap2}>
                         <Text style={typographies.nameTextW400} numberOfLines={1}>{item.driver.name || 'No name found'}</Text>
                         <Text style={typographies.textSubTitleW400}>
-                            {`${item.vehicle.length || ''} ${item.vehicle.capacity || ''} ${item.vehicle.type || ''}`.trim()}
+                            {`${item.vehicle.length || ''} ${item.vehicle.capacity || ''} ${Vehicle.getType(item.vehicle.type || '')}`.trim()}
                         </Text>
                     </View>
                     <View style={styles.ratingWrp}>
