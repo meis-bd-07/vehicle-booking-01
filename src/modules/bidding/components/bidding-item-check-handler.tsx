@@ -7,7 +7,7 @@ import styles from "@bidding_modules/styles/each-bidding-style";
 import { IEachBidding } from "@bidding_modules/types/bidding-list";
 import { useBiddingActionState } from "@states/bidding/bidding-action.state";
 import { useState } from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import { Platform, Text, TouchableOpacity, View } from "react-native";
 
 const BiddingItemCheckHandler = ({item}: {item: IEachBidding}) => {
     const {toggleSelect} = useBiddingActionState(s => s);
@@ -18,7 +18,7 @@ const BiddingItemCheckHandler = ({item}: {item: IEachBidding}) => {
     }
 
     return (
-        <TouchableOpacity activeOpacity={0.3} onPress={handleToggle} style={[globalStyles.gap2, globalStyles.pt4]}>
+        <TouchableOpacity activeOpacity={0.3} onPress={handleToggle} style={[Platform.OS === 'android' ? globalStyles.gap2 : globalStyles.gap8, globalStyles.pt4]}>
             <View style={styles.check}>{checked ? <CheckIcon /> : <UncheckIcon />}</View>
             <Text style={typographies.textS18L20W700}>{PRICE_FLAG[item.priceFlag]}{item.price}</Text>
         </TouchableOpacity>

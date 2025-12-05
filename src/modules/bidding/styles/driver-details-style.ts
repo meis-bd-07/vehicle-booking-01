@@ -3,7 +3,7 @@ import { customPadding } from "@assets/styles/global.style.asset";
 import rs from "@assets/styles/responsiveSize.style.asset";
 import { typographies } from "@assets/styles/typographies.style.asset";
 import getHexaOpacityColorCode from "@utils/helpers/get-hexa-opacity-color-code";
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 
 const driverDetailsStyles = StyleSheet.create({
     headerContainer: {
@@ -77,7 +77,7 @@ const driverDetailsStyles = StyleSheet.create({
     },
     /* review */
     reviewHeader: {
-        height: 33,
+        height: Platform.OS === 'android' ?  33 : 38,
         flexDirection: 'row',
         gap: 10,
         alignItems: 'center',

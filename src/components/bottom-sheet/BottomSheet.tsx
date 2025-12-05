@@ -1,4 +1,4 @@
-import { Pressable, StatusBar } from 'react-native';
+import { Platform, Pressable, StatusBar } from 'react-native';
 import React, { useCallback, useImperativeHandle } from 'react';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, {
@@ -14,6 +14,7 @@ import { IBottomSheetProps, IBottomSheetRefProps } from './interface';
 import { SCREEN_HEIGHT } from '@assets/ts/core.data';
 import { globalStyles } from '@assets/styles/global.style.asset';
 import { runOnJS } from 'react-native-reanimated';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 let MAX_TRANSLATE_Y = -SCREEN_HEIGHT;
 
@@ -29,13 +30,14 @@ const BottomSheet = React.forwardRef<IBottomSheetRefProps, IBottomSheetProps>(
     onGestureStart,
     footer
   }, ref) => {
+    const insets = useSafeAreaInsets();
     const translateY = useSharedValue(0);
     const active = useSharedValue(false);
 
     // ------------------------------
     // HEIGHT CALCULATION
     // ------------------------------
-    const statusBarHeight = (StatusBar.currentHeight || 34) + 10;
+    const statusBarHeight = (Platform.OS === 'android' ? (StatusBar.currentHeight || 34) : insets.top) + 10;
     const FULL_HEIGHT = fullHeight ? -(SCREEN_HEIGHT - statusBarHeight) : -SCREEN_HEIGHT * 0.9;
 
     // ------------------------------

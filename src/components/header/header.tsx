@@ -6,7 +6,7 @@ import CustomStatusBar from "@components/status-bar/index.component";
 import { useNavigation } from "@react-navigation/native";
 import showAlertWithOneAction from "@utils/helpers/show-alert-with-one-action";
 import { ReactElement } from "react";
-import { StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from "react-native";
+import { Platform, StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from "react-native";
 
 interface IType {
     showStatusBar?: boolean;
@@ -26,7 +26,7 @@ interface IType {
 
 const Header = ({
     showStatusBar = true,
-    height = 80,
+    height = Platform.OS === 'android' ? 80 : 110,
     containerStyle = {},
     wrapperStyle = {},
     paddingTop = 0,
@@ -48,7 +48,7 @@ const Header = ({
     }
     return (
         <View style={[styles.containerStyle, {height: height, paddingTop: paddingTop, backgroundColor: bg}, containerStyle]}>
-            {showStatusBar && <CustomStatusBar barStyle="dark-content" />}
+            {showStatusBar && <CustomStatusBar barStyle="dark-content"  />}
             <View style={[styles.wrapperStyle, wrapperStyle]}>
                 <View style={styles.leftContainer}>
                     {showLeftIcon && <TouchableOpacity
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        gap: 12
+        gap: 12,
     },
     leftContainer: {
         flexDirection: 'row',

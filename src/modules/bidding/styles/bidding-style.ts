@@ -1,6 +1,6 @@
 import { colors } from "@assets/styles/colors.style.asset";
 import { customPadding } from "@assets/styles/global.style.asset";
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     headerLeft: {
@@ -20,8 +20,12 @@ const styles = StyleSheet.create({
     },
     listContainer: {
         paddingHorizontal: 16,
-        marginTop: 16,
-        gap: 10
+        ...Platform.select({
+            android: {
+                marginTop: 16,
+                gap: 10
+            },
+        }),
     },
     bottom: {
         height: 60,
